@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WhichBingo Alpha</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/nucleuscss@1.0.5/css/nucleus.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-nav.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="style-nav.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="//code.jquery.com/mobile/1.5.0-alpha.1/jquery.mobile-1.5.0-alpha.1.min.js"></script>
+
+
+    <!-- Fav icons -->
+
+    <link rel="manifest" href="/assets/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://alpha.whichbingo.co.uk/"/>
+
+    <!-- Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,600" rel="stylesheet" type="text/css">
+
+    <!-- GTM -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+        var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KQ3DJ9J');</script>
+
+
+</head>
+<body>
+<!-- GTM -->
+
+
+<style>
+    .mob {
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        .mob {
+            display: none;
+        }
+    }
+</style>
+<header class="c-header">
+    <div class="o-grid o-grid--demo o-grid--wrap o-grid--top o-grid--small-full o-grid--medium-full o-grid--large-full o-container o-container--xlarge">
+        <div class="o-grid__col">
+            <nav role="navigation">
+                <div class="c-mobile-nav" onClick="mmenu();">
+                    <div class="c-mobile-nav__hamburger"></div>
+                </div>
+                <div class="c-logo">
+                    <a href="/" onclick="ga('send', 'event', 'Masthead', 'WhichBingo Logo', '/');"
+                       title="WhichBingo"><img class="o-image" src="http://alpha.whichbingo.co.uk/assets/svgs/whichbingo-logo.svg" alt="WhichBingo"
+                                               width="167" height="35"></a>
+                </div>
+                <ul class="main-nav">
+
+
+
+                    <li class="top-level-link">
+                        <a class="mega-menu"><span>Bingo</span></a>
+                        <div class="sub-menu-block ">
+                            <div class="o-grid">
+
+                                <div class="o-grid__col ">
+                                    <div class="wb-sub-menu">
+
+                                    <ul>
+
+                                        <li class='e-heading--overview active has-sub'><a href='#'><span>Products</span></a>
+
+                                    <ul class="sub-menu-lists" style="display: none;">
+                                        <li class="has-sub"><a href="">New
+                                            Bingo Sites</a></li>
+                                        <li class="has-sub"><a href=""
+                                              >New
+                                            Sites No Deposit</a></li>
+                                    </ul>
+                                        </li>
+
+
+
+                                        <li class='has-sub'><a href='#'><span>New Sites</span></a>
+
+                                            <ul class="sub-menu-lists" style="display: none;">
+                                                <li class=""><a href="">New
+                                                    Bingo Sites</a></li>
+                                                <li class=""><a href=""
+                                                >New
+                                                    Sites No Deposit</a></li>
+
+                                                <li class=""><a href="">New
+                                                    Bingo Sites</a></li>
+                                                <li class=""><a href=""
+                                                >New
+                                                    Sites No Deposit</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class='has-sub'><a href='#'><span>Recommended</span></a>
+
+                                            <ul class="sub-menu-lists" style="display: none;">
+                                                <li class=""><a href="">Offers</a></li>
+                                                <li class=""><a href=""
+                                                >etc</a></li>
+                                                <li class=""><a href=""
+                                                >etc</a></li>
+                                                <li class=""><a href=""
+                                                >etc</a></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+
+
+                                    </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="c-alert c-alert--yellow">
+        <div class="o-grid o-grid--demo o-grid--wrap o-grid--top o-grid--small-full o-grid--medium-full o-grid--large-full o-container o-container--xlarge">
+            <div class="o-grid__col o-grid__col--width-50">
+                <h3 class="e-heading--section u-typography--uppercase">This is our new homepage</h3>
+                <p class="e-paragraph">You are looking at a work in progress and you can <a class="c-link"
+                                                                                            href="https://www.whichbingo.co.uk/lobby/whichbingo-alpha-homepage/"
+                                                                                            title="read about why we've decided to change it">read
+                    about why we've decided to change it</a>.</p>
+            </div>
+            <div class="o-grid__col o-grid__col--width-50">
+                <a href="https://www.whichbingo.co.uk"
+                   class="c-button c-button--block c-button--ghost-primary c-button--primary" role="button"
+                   title="Return to Current Site">Return to Current Site</a>
+                <a href="https://whichbingo.typeform.com/to/kLnKKn"
+                   class="c-button c-button--block c-button--ghost-primary c-button--primary u-no-margin" role="button"
+                   target="_blank" title="Tell Us What You Think">Tell Us What You Think</a>
+            </div>
+        </div>
+    </div>
+</header>
+<a name="backtotop"></a>
+
+<div class="o-page" id="scroll-content">
+    <!-- HERO BANNER -->
+    <div class="c-hero-banner">
+        <div class="o-grid o-grid--demo o-grid--wrap o-grid--top o-grid--small-full o-grid--medium-full o-grid--large-full o-container o-container--xlarge">
+            <div class="o-grid__col o-grid__col--width-70">
+                <div class="c-hero-banner--content">
+
+                    <div class="siema" style="display:none;" onMouseover="sHover=true;"
+                         onMouseout="sHover=false;sCount=0;">
+                        <div style='background-color:#399DAD;cursor: pointer;'
+                             onClick="window.open('https://dazzlecasino.casino-pp.net/?lang=en&tracker=140200#/registration', '_blank');ga('send', 'event', 'Homepage', 'Slider HTML', 'Dazzle Casino');return(false);">
+                            <div class="c-slider">
+
+                            </div>
+                        </div>
+                        <div style='background-color:#C8154E;cursor: pointer;'
+                             onClick="window.open('http://wlunitedcommissions.adsrv.eacdn.com/wl/clk?btag=a_6355b_2678', '_blank');ga('send', 'event', 'Homepage', 'Slider HTML', 'Sugar Bingo');return(false);">
+                            <div class="c-slider">
+
+                            </div>
+                        </div>
+                        <div style='background-color:#00A0DC;cursor: pointer;'
+                             onClick="window.open('https://www.costabingo.com/?tid=826cb577-9958-4347-85a6-b0cfe42c9abe&af=15.1400200458', '_blank');ga('send', 'event', 'Homepage', 'Slider HTML', 'Costa Bingo');return(false);">
+                            <div class="c-slider">
+
+                            </div>
+                        </div>
+                        <div style='background-color:#481141;cursor: pointer;'
+                             onClick="window.open('http://bingo.bet365.com/dl/welcomepackage?affiliate=365_728207', '_blank');ga('send', 'event', 'Homepage', 'Slider HTML', 'bet365');return(false);">
+                            <div class="c-slider">
+                                <div class="c-slider--content">
+                                    <div class="c-slider--logo">
+                                        <img src="/assets/img/sliderImages/site_19.gif" alt=""
+                                             class="round-logos-slider" style='background-color:#B60D95'>
+                                    </div>
+
+                                    <div class="c-slider--info">
+                                        <h2 class="e-heading--main" style="color:#FFFFFF">bet365</h2>
+                                        <p class="e-heading--section" style="color:#FFE418">Up to £100 Bingo bonus</p>
+                                        <p class="e-heading--descriptive" style="color:#FFFFFF;">£20 Slots bonus</p>
+                                    </div>
+
+                                    <a class="c-button c-button--medium c-button--secondary" href="#" role="button">Claim
+                                        Now</a>
+                                    <p class="e-paragraph--small" style="color:#FFFFFF">New Customer Offer. T&C's Apply.
+                                        18+. Please Gamble Responsibly.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style='background-color:#ED1D3A;cursor: pointer;'
+                             onClick="window.open('https://wlgamesysaffiliates.adsrv.eacdn.com/C.ashx?btag=a_43926b_12388c_&affid=15224&siteid=43926&adid=12388&c=', '_blank');ga('send', 'event', 'Homepage', 'Slider HTML', 'Heart Bingo');return(false);">
+                            <div class="c-slider">
+                                <div class="c-slider--content">
+                                    <div class="c-slider--logo">
+                                        <img src="/assets/img/sliderImages/site_18.gif" alt=""
+                                             class="round-logos-slider" style='background-color:#FFFFFF'>
+                                    </div>
+
+                                    <div class="c-slider--info">
+                                        <h2 class="e-heading--main" style="color:#FFFFFF">Heart Bingo</h2>
+                                        <p class="e-heading--section" style="color:#FFFFFF">£5 Welcome bonus</p>
+                                        <p class="e-heading--descriptive" style="color:#FFFFFF;">No deposit required</p>
+                                    </div>
+
+                                    <a class="c-button c-button--medium c-button--secondary" href="#" role="button">Claim
+                                        Now</a>
+                                    <p class="e-paragraph--small" style="color:#FFFFFF">New members only. £5 will expire
+                                        after 7 days unless deposit/wager. T&Cs apply. 18+. Please Gamble
+                                        Responsibly.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c-pagination">
+                        <button class="btn0" class="is-active" onMouseover="sHover=true;">1</button>
+                        <button class="btn1" class="is-active" onMouseover="sHover=true;">2</button>
+                        <button class="btn2" class="is-active" onMouseover="sHover=true;">3</button>
+                        <button class="btn3" class="is-active" onMouseover="sHover=true;">4</button>
+                        <button class="btn4" class="is-active" onMouseover="sHover=true;">5</button>
+                    </div>
+                    <button class="prev" onMouseover="sHover=true;">Previous</button>
+                    <button class="next" onMouseover="sHover=true;">Next</button>
+                    <script language="JavaScript"> function sliderButtons(mySiema) {
+                        const btn0 = document.querySelector('.btn0');
+                        btn0.addEventListener('click', function () {
+                            sCount = 0;
+                            o = mySiema.currentSlide;
+                            mySiema.goTo(0);
+                            sBtn(o, mySiema.currentSlide);
+                        });
+                        const btn1 = document.querySelector('.btn1');
+                        btn1.addEventListener('click', function () {
+                            sCount = 0;
+                            o = mySiema.currentSlide;
+                            mySiema.goTo(1);
+                            sBtn(o, mySiema.currentSlide);
+                        });
+                        const btn2 = document.querySelector('.btn2');
+                        btn2.addEventListener('click', function () {
+                            sCount = 0;
+                            o = mySiema.currentSlide;
+                            mySiema.goTo(2);
+                            sBtn(o, mySiema.currentSlide);
+                        });
+                        const btn3 = document.querySelector('.btn3');
+                        btn3.addEventListener('click', function () {
+                            sCount = 0;
+                            o = mySiema.currentSlide;
+                            mySiema.goTo(3);
+                            sBtn(o, mySiema.currentSlide);
+                        });
+                        const btn4 = document.querySelector('.btn4');
+                        btn4.addEventListener('click', function () {
+                            sCount = 0;
+                            o = mySiema.currentSlide;
+                            mySiema.goTo(4);
+                            sBtn(o, mySiema.currentSlide);
+                        });
+                    };</script>
+                </div>
+            </div>
+
+            <div class="o-grid__col o-grid__col--width-30">
+                <div class="c-editors-choice">
+                    <h4 class="e-heading--section u-typography--uppercase">Editor's Choice</h4>
+                    <ul class="e-unordered-list e-unordered-list--unstyled">
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1411"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Bingo and Beyond'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Bingo and Beyond');"
+                               title="Bingo and Beyond">Bingo and Beyond
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1412"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Mecca Bingo'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Mecca Bingo');"
+                               title="Mecca Bingo">Mecca Bingo
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1403"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Heart Bingo'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Heart Bingo');"
+                               title="Heart Bingo">Heart Bingo
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1406"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Moon Bingo'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Moon Bingo');"
+                               title="Moon Bingo">Moon Bingo
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1404"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Butlers Bingo'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Butlers Bingo');"
+                               title="Butlers Bingo">Butlers Bingo
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1402"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Dazzle Casino'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Dazzle Casino');"
+                               title="Dazzle Casino">Dazzle Casino
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1410"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Mayfair Slots'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Mayfair Slots');"
+                               title="Mayfair Slots">Mayfair Slots
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1407"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Ted Bingo'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Ted Bingo');"
+                               title="Ted Bingo">Ted Bingo
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1408"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Robin Hood Bingo'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Robin Hood Bingo');"
+                               title="Robin Hood Bingo">Robin Hood Bingo
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1405"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'bet365 Bingo'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'bet365 Bingo');"
+                               title="bet365 Bingo">bet365 Bingo
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1401"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'Costa Bingo'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'Costa Bingo');"
+                               title="Costa Bingo">Costa Bingo
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                        <li><a class="c-link c-link--primary" href="https://www.whichbingo.co.uk/out.php?editors=1409"
+                               target="_blank"
+                               onclick="ga('send', 'event', 'Editors Choice', 'Homepage clickout', 'All British Casino'); ga('send', 'event', 'Homepage', 'Content Editors Choice', 'All British Casino');"
+                               title="All British Casino">All British Casino
+                            <div class="u-float-right c-button c-button--small c-button--secondary" role="button">Play
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT WHICHBINGO -->
+        <div class="c-about-wb">
+            <div class="o-grid o-grid--demo o-grid--wrap o-grid--top o-grid--no-gutter o-container o-container--xlarge">
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-33@large">
+                    <ul class="e-unordered-list e-unordered-list--inline">
+                        <li>
+                            <img class="o-image u-float-right" src="/assets/svgs/about-wb.svg" alt="What is WhichBingo"
+                                 width="50" height="60"/>
+                        </li>
+                        <li>
+                            <h3 class="e-heading--section">What is WhichBingo?</h3>
+                            <p class="e-paragraph"><a class="c-link" href="https://www.whichbingo.co.uk/about-us/"
+                                                      onclick="ga('send','event','Homepage','Content About', 'What is WhichBingo? Find out more');"
+                                                      title="Find out more">Find out more</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-33@large">
+                    <ul class="e-unordered-list e-unordered-list--inline">
+                        <li>
+                            <img class="o-image u-float-right" src="/assets/svgs/new-to-online-bingo.svg"
+                                 alt="New to Online Bingo" width="80" height="49"/>
+                        </li>
+                        <li>
+                            <h3 class="e-heading--section">New to Online Bingo?</h3>
+                            <p class="e-paragraph"><a class="c-link" href="#new-to-online-bingo"
+                                                      onclick="anchorTo('new-to-online-bingo');ga('send','event','Homepage','Content About', 'New to Online Bingo? Discover today');"
+                                                      title="Discover today">Discover today</a></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-33@large">
+                    <ul class="e-unordered-list e-unordered-list--inline">
+                        <li>
+                            <img class="o-image u-float-right" src="/assets/svgs/exclusive-offers.svg"
+                                 alt="Get Exclusive Offers" width="50" height="60"/>
+                        </li>
+                        <li>
+                            <h3 class="e-heading--section">Get Exclusive Offers</h3>
+                            <p class="e-paragraph"><a class="c-link" href="https://www.whichbingo.co.uk/join/"
+                                                      onclick="ga('send','event','Homepage','Content About', 'Get Exclusive Offers. Join today');"
+                                                      title="Join today">Join today</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- / ABOUT WHCHBINGO -->
+    </div>
+    <!-- / HERO BANNER -->
+
+    <!-- NEW SITES -->
+    <div class="c-new-sites">
+        <div class="c-new-sites__header">
+            <div class="o-grid o-grid--demo o-grid--wrap o-grid--top o-grid--small-full o-grid--medium-full o-grid--large-full o-container o-container--xlarge">
+                <div class="o-grid__col">
+                    <h1 class="e-heading--section u-typography--uppercase">New Bingo Sites</h1>
+                    <p class="e-paragraph">Find the latest New Bingo Sites for October 2017. <a class="c-link"
+                                                                                                href="https://www.whichbingo.co.uk/new-online-bingo-sites/"
+                                                                                                onclick="ga('send','event','Homepage','Content New Sites', 'Browse all New Bingo Sites');"
+                                                                                                title="Browse all New Bingo Sites">Browse
+                        all New Bingo Sites</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-new-sites__content">
+            <div class="o-grid o-grid--demo o-grid--wrap o-grid--top o-container o-container--xlarge">
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-20@large o-grid__col--width-25@medium">
+                    <div class="c-card c-card--higher c-card--clickable"
+                         onClick="document.getElementById('nbs1').click();">
+                        <header class="c-card__header t-just-cash-bingo--bg">
+                            <img class="o-image u-absolute-center" src="/assets/brands/just-cash-bingo.png"
+                                 alt="Just Cash Bingo">
+                        </header>
+
+                        <div class="c-card__content">
+                            <h6 class="e-heading--overview">Just Cash Bingo</h6>
+                            <p class="e-paragraph">Launched: August 2017<br>Software: Dragonfish</p>
+                        </div>
+
+                        <footer class="c-card__footer c-card__item">
+                            <a href="https://www.whichbingo.co.uk/new-online-bingo-sites#justcashbingo" id="nbs1"
+                               onclick="ga('send','event','Homepage','Content New Sites', 'Just Cash Bingo');"
+                               title="Find Out More" class="c-button c-button--block c-button--secondary" role="button">Find
+                                Out More</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-20@large o-grid__col--width-25@medium">
+                    <div class="c-card c-card--higher c-card--clickable"
+                         onClick="document.getElementById('nbs2').click();">
+                        <header class="c-card__header t-queenbee-bingo--bg">
+                            <img class="o-image u-absolute-center" src="/assets/brands/queenbee-bingo.png"
+                                 alt="QueenBee Bingo">
+                        </header>
+
+                        <div class="c-card__content">
+                            <h6 class="e-heading--overview">Queen Bee Bingo</h6>
+                            <p class="e-paragraph">Launched: September 2017<br>Software: Dragonfish</p>
+                        </div>
+
+                        <footer class="c-card__footer c-card__item">
+                            <a href="https://www.whichbingo.co.uk/new-online-bingo-sites#queenbeebingo" id="nbs2"
+                               onclick="ga('send','event','Homepage','Content New Sites', 'Queen Bee Bingo');"
+                               title="Find Out More" class="c-button c-button--block c-button--secondary" role="button">Find
+                                Out More</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-20@large o-grid__col--width-25@medium">
+                    <div class="c-card c-card--higher c-card--clickable"
+                         onClick="document.getElementById('nbs3').click();">
+                        <header class="c-card__header t-more-than-bingo--bg">
+                            <img class="o-image u-absolute-center" src="/assets/brands/more-than-bingo.png"
+                                 alt="Bingo and Beyond">
+                        </header>
+
+                        <div class="c-card__content">
+                            <h6 class="e-heading--overview">More than Bingo</h6>
+                            <p class="e-paragraph">Launched: September 2017<br>Software: Cozy Games</p>
+                        </div>
+
+                        <footer class="c-card__footer c-card__item">
+                            <a href="https://www.whichbingo.co.uk/new-online-bingo-sites#morethanbingo" id="nbs3"
+                               onclick="ga('send','event','Homepage','Content New Sites', 'More than Bingo');"
+                               title="Find Out More" class="c-button c-button--block c-button--secondary" role="button">Find
+                                Out More</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-20@large o-grid__col--width-25@medium">
+                    <div class="c-card c-card--higher c-card--clickable"
+                         onClick="document.getElementById('nbs4').click();">
+                        <header class="c-card__header t-wtg-bingo--bg">
+                            <img class="o-image u-absolute-center" src="/assets/brands/wtg-bingo.png" alt="WTG Bingo">
+                        </header>
+
+                        <div class="c-card__content">
+                            <h6 class="e-heading--overview">WTG Bingo</h6>
+                            <p class="e-paragraph">Launched: July 2017<br>Software: Jumpman Gaming</p>
+                        </div>
+
+                        <footer class="c-card__footer c-card__item">
+                            <a href="https://www.whichbingo.co.uk/new-online-bingo-sites#wtgbingo" id="nbs4"
+                               onclick="ga('send','event','Homepage','Content New Sites', 'WTG Bingo');"
+                               title="Find Out More" class="c-button c-button--block c-button--secondary" role="button">Find
+                                Out More</a>
+                        </footer>
+                    </div>
+                </div>
+
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-20@large o-grid__col--width-25@medium last-child">
+                    <div class="c-card c-card--higher c-card--clickable"
+                         onClick="document.getElementById('nbs5').click();">
+                        <header class="c-card__header t-real-deal-bingo--bg">
+                            <img class="o-image u-absolute-center" src="/assets/brands/real-deal-bingo.png"
+                                 alt="Plush Bingo">
+                        </header>
+
+                        <div class="c-card__content">
+                            <h6 class="e-heading--overview">Real Deal Bingo</h6>
+                            <p class="e-paragraph">Launched: June 2017<br>Software: Dragonfish</p>
+                        </div>
+
+                        <footer class="c-card__footer c-card__item">
+                            <a href="https://www.whichbingo.co.uk/new-online-bingo-sites#realdealbingo" id="nbs5"
+                               onclick="ga('send','event','Homepage','Content New Sites', 'Real Deal Bingo');"
+                               title="Find Out More" class="c-button c-button--block c-button--secondary" role="button">Find
+                                Out More</a>
+                        </footer>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <div class="c-new-sites__footer">
+            <div class="o-grid o-grid--demo o-grid--wrap o-grid--top o-container o-container--xlarge">
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-50@large o-grid__col--width-100@medium o-grid__col--width-100@small">
+                    <ul class="e-unordered-list e-unordered-list--inline">
+                        <li class="e-unordered-list--inline__image">
+                            <img class="o-image" src="/assets/svgs/slots.svg" alt="New Slot Sites">
+                        </li>
+                        <li class="e-unordered-list--inline__content">
+                            <h5 class="e-heading--section u-typography--uppercase">New Slot Sites</h5>
+                            <p class="e-paragraph">Do you enjoy slot games? Check out our latest list of New Slot Sites
+                                to have launched in recent weeks.</p>
+                            <p class="e-paragraph"><a class="c-link"
+                                                      href="https://www.whichbingo.co.uk/new-slots-sites/"
+                                                      onclick="ga('send','event','Homepage','Content New Sites', 'Browse all New Slot Sites');"
+                                                      title="Browse all New Slot Sites">Browse all New Slot Sites</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="o-grid__col o-grid__col--width-100 o-grid__col--width-50@large o-grid__col--width-100@medium o-grid__col--width-100@small">
+                    <ul class="e-unordered-list e-unordered-list--inline">
+                        <li class="e-unordered-list--inline__image">
+                            <img class="o-image" src="/assets/svgs/casino.svg" alt="New Casino Sites">
+                        </li>
+                        <li class="e-unordered-list--inline__content">
+                            <h5 class="e-heading--section u-typography--uppercase">New Casino Sites</h5>
+                            <p class="e-paragraph">Are you more of a casino fan? Take a look at our list of the very
+                                latest Casino Sites to hit the market.</p>
+                            <p class="e-paragraph"><a class="c-link"
+                                                      href="https://www.whichbingo.co.uk/new-casino-sites/"
+                                                      onclick="ga('send','event','Homepage','Content New Sites', 'Browse all New Casino Sites');"
+                                                      title="Browse all New Casino Sites">Browse all New Casino
+                                Sites</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- / JOIN WHICHBINGO --></div>
+
+<footer class="c-footer" id="footer-block">
+
+</footer>
+
+<script type="text/javascript">
+    function init_scripts() {
+        resizeBanner();
+        window.addEventListener('resize', resizeBanner);
+
+        var imported = document.createElement('script');
+        imported.src = 'https://fast.wistia.com/embed/medias/97lg3b3cof.jsonp';
+        document.head.appendChild(imported);
+
+        var imported = document.createElement('script');
+        imported.src = 'https://fast.wistia.com/assets/external/E-v1.js';
+        document.head.appendChild(imported);
+    }
+
+    // this is to be removed when the site goes live - it's adding a space to the "this is our new home page" banner
+    function resizeBanner() {
+        h = document.querySelector('.c-alert').clientHeight + document.querySelector('.c-header').clientHeight;
+        document.querySelector('#scroll-content').style.paddingTop = (h + 2) + 'px';
+    }
+
+    window.onload = init_scripts();
+
+    var sHover = false;
+    var sCount = 0;
+
+    function slider() {
+        document.querySelector('.siema').style.display = 'block';
+
+        const mySiema = new Siema({
+            loop: true,
+            duration: 750
+        });
+        document.querySelector('.prev').addEventListener('click', function () {
+            sCount = 0;
+            o = mySiema.currentSlide;
+            mySiema.prev();
+            sBtn(o, mySiema.currentSlide);
+        });
+        document.querySelector('.next').addEventListener('click', function () {
+            sCount = 0;
+            o = mySiema.currentSlide;
+            mySiema.next();
+            sBtn(o, mySiema.currentSlide);
+        });
+        document.querySelector('.btn0').classList.add('is-active');
+
+        if (typeof sliderButtons == 'function') {
+            sliderButtons(mySiema);
+        }
+
+        setInterval(function () {
+            if (!sHover) {
+                sCount++;
+                if (sCount >= 5) {
+                    o = mySiema.currentSlide;
+                    mySiema.next();
+                    sCount = 0;
+                    sBtn(o, mySiema.currentSlide);
+                }
+            }
+        }, 1000);
+
+        document.querySelector('.siema').addEventListener('touchmove', function (e) {
+            sCount = 0;
+        }, false);
+
+        document.querySelector('.siema').addEventListener('touchstart', function (e) {
+            sCount = 0;
+            sHover = true;
+        }, false);
+
+        document.querySelector('.siema').addEventListener('touchend', function (e) {
+            sCount = 0;
+            sHover = true;
+        }, false);
+    }
+
+    function sBtn(f, t) {
+        document.querySelector('.btn' + f).classList.remove('is-active');
+        document.querySelector('.btn' + t).classList.add('is-active');
+    }
+
+    jQuery( window ).on( "swipeleft", function( event )
+    {
+        mmenu();
+    } );
+
+    function mmenu() {
+        if (document.querySelector('.c-mobile-nav').classList.contains('is-active')) {
+            document.querySelector('.c-mobile-nav').classList.remove('is-active');
+            document.querySelector('.c-header').classList.remove('is-open');
+            document.querySelector('.o-page').classList.remove('is-open');
+            document.querySelector('.c-footer').classList.remove('is-open');
+        } else {
+            document.querySelector('.c-mobile-nav').classList.add("is-active");
+            document.querySelector('.c-header').classList.add('is-open');
+            document.querySelector('.o-page').classList.add('is-open');
+            document.querySelector('.c-footer').classList.add('is-open');
+        }
+    }
+</script>
+<script onLoad="slider()" src="/js/siema.min.js" async></script>
+<
+/body>
+< /html>
